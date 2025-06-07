@@ -124,13 +124,11 @@ button:active {
 @media screen and (max-width: 480px) {
     body {
         text-align: center;   
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    margin-top: 20px;
-    border: none;
-    padding-top: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        border: none;
     }
 
     .container {
@@ -139,6 +137,7 @@ button:active {
         margin: 5px 5px 5px 5px;
         display: inline-flexbox;
         align-content: center;
+        height: max-content;
     } 
 
     #quote {
