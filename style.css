@@ -1,0 +1,248 @@
+body {
+    text-align: center;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: 10px;
+    border-style: solid;
+    border-width: 5px;
+    padding-top: 5px;
+    background-image: url(img/bg.gif);
+}
+
+.container {
+    background: linear-gradient(to left, #0069B7, #6E00FF);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 80%;
+    min-width: 200px;
+    display: block;
+    box-shadow: 0 20px 20px #161111;
+    border-style: groove;
+    align-items: center;
+}
+
+.container:hover {
+    transform: scale(1.01);
+}
+
+h1 {
+    font-size: x-large;
+    text-shadow: 0 5px 5px #161111;
+}
+
+img {
+    align-items: center;
+    width: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    max-width: 100%;
+    height: auto;
+    border-style: groove;
+    border-color: #9d9dc0;
+    box-shadow: 0 10px 10px #161111;
+}
+
+img:hover {
+    scale: 1.01;
+    border-width: 5px;
+    border-style: double;
+    border-color: #f7f6e2;
+}
+
+#quote {
+    color: #FFFFFF;
+    margin: 20px 10px;
+    font-size: 1.2em;
+    line-height: 1.5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+}
+
+
+button {
+    background: linear-gradient(to left, #6E00FF, #0069B7);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: aquamarine;
+    box-shadow: 0 10px 10px #000000;
+}
+
+button:hover {
+    background: linear-gradient(to right, #6E00FF, #0069B7);
+    scale: 1.01;
+}
+
+button:active {
+    transform: scale(1.05);
+}
+
+/* Écrans de taille moyenne (tablettes) */
+@media screen and (max-width: 768px) {
+    body {
+        text-align: center;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-top: 20px;
+    border: solid;
+    padding-top: 5px;
+    }
+
+    .container {
+        max-width: 90%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: small;
+    }
+
+    img {
+        align-self:center;
+    };
+
+    #quote {
+        font-size: 1.1em;
+    }
+
+    button {
+        padding: 8px 12px;
+    }
+}
+
+/* Petits écrans (téléphones) */
+@media screen and (max-width: 480px) {
+    body {
+        text-align: center;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-top: 20px;
+    border: none;
+    padding-top: 5px;
+    }
+
+    .container {
+        max-width: 95%;
+        padding: 15px;
+        margin: 5px 5px 5px 5px;
+        display: inline-flexbox;
+        align-content: center;
+    } 
+
+    #quote {
+        font-size: 1em;
+    }
+
+    img {
+        align-items:center;
+    };
+
+    button {
+        padding: 6px 10px;
+    }
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-in;
+}
+
+.slide-in {
+    animation: slideIn 1s ease-in-out;
+}
+
+.zoom-in {
+    animation: zoomIn 1s ease-in;
+}
+
+.flip-in {
+    animation: flipIn 1s ease-in-out;
+}
+
+.bounce-in {
+    animation: bounceIn 1s ease-in-out;
+}
+
+.rotate-in {
+    animation: rotateIn 1s ease-in-out;
+}
+
+.glitch {
+    animation: glitch 0.2s infinite;
+}
+
+.spiral {
+    animation: spiral 1.5s ease-in-out;
+}
+
+.flash {
+    animation: flash 3s infinite;
+}
+
+/*@keyframes rotateAnim {
+    0% { background-position: 0% 0%; }
+    20% { background-position: 200% 200%; }
+    40% { background-position: 0% 100%; }
+    60% { background-position: 100% 30%; }
+    80% { background-position: 50% 150%; }
+    100% { background-position: 110% 0%; }
+}*/
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes zoomIn {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+@keyframes flipIn {
+    from { transform: rotateX(90deg); opacity: 0; }
+    to { transform: rotateX(0); opacity: 1; }
+}
+
+@keyframes bounceIn {
+    0% { transform: scale(0.6); opacity: 0; }
+    50% { transform: scale(1.1); opacity: 0.7; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes rotateIn {
+    from { transform: rotate(-20deg); opacity: 0; }
+    to { transform: rotate(0); opacity: 1; }
+}
+
+@keyframes glitch {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(3px); }
+    50% { transform: translateX(6px); }
+    75% { transform: translateX(3px); }
+    100% { transform: translateX(0); }
+}
+
+@keyframes spiral {
+    0% { transform: rotate(0) scale(0.8); }
+    100% { transform: rotate(360deg) scale(1); }
+}
+
+@keyframes flash {
+    0%, 100% { opacity: 1;} 
+    50% { opacity: 0.5; }
+}
